@@ -1,15 +1,28 @@
 {
-  "name": "crossmint-challengep",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "typescript": "^5.0.2",
-    "vite": "^4.4.5"
-  }
+	"name": "crossmint",
+	"version": "0.0.0",
+	"description": "Crosmint Challenge",
+	"main": "src/main.ts",
+	"repository": "https://github.com/p4tr1c1o/Crossmint.git",
+	"author": "P4tr1c1o <dibernardi.patricio@gmail.com>",
+	"license": "MIT",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"run": "ts-node --esm ./src/main.ts",
+		"test": "mocha"
+	},
+	"devDependencies": {
+		"@types/chai": "^4.3.5",
+		"@types/mocha": "^10.0.1",
+		"@types/node": "^20.5.7",
+		"chai": "^4.3.8",
+		"chai-http": "^4.4.0",
+		"mocha": "^10.2.0",
+		"ts-node": "^10.9.1",
+		"typescript": "^5.2.2"
+	},
+	"dependencies": {
+		"axios": "^1.5.0"
+	}
 }
