@@ -6,10 +6,11 @@
 	"repository": "https://github.com/p4tr1c1o/Crossmint.git",
 	"author": "P4tr1c1o <dibernardi.patricio@gmail.com>",
 	"license": "MIT",
-	"type": "module",
 	"private": true,
+	"type": "module",
 	"scripts": {
-		"run": "ts-node --esm ./src/main.ts",
+		"run:phase1": "ts-node ./src/phase1.ts",
+		"run:phase2": "ts-node ./src/phase2.ts",
 		"test": "mocha"
 	},
 	"devDependencies": {
