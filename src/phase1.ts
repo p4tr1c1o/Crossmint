@@ -13,6 +13,7 @@ const startPosition = 5
 // center polyanet
 await makePost(startPosition, startPosition)
 
+// cross
 for (let index = 1; index < 4; index++) {
 
 	let row = startPosition - index
@@ -39,8 +40,8 @@ async function makePost(row: number, column: number) {
 		}
 
 		await delay(6000)
-		// const respose = await axiosClient.post(url, body)
-		const respose = await axiosClient.delete(url, { data: body })
+		const respose = await axiosClient.post(url, body)
+
 		console.log(`row: ${row}`, `column: ${column}`, respose.statusText)
 
 	} catch (error) {

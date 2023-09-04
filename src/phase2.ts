@@ -11,15 +11,13 @@ type RequestBody = {
 
 const urlMap = `https://challenge.crossmint.io/api/map/${candidateId}/goal`
 const response = await axiosClient.get(urlMap)
-console.log(response.data)
-
-const goal = response.data.goal as Array<Array<string>>
+const map = response.data.goal as Array<Array<string>>
 
 
-for (let rowIndex = 0; rowIndex < goal.length; rowIndex++) {
+for (let rowIndex = 0; rowIndex < map.length; rowIndex++) {
 
-	for (let colIndex = 0; colIndex < goal[rowIndex].length; colIndex++) {
-		let cell = goal[rowIndex][colIndex]
+	for (let colIndex = 0; colIndex < map[rowIndex].length; colIndex++) {
+		let cell = map[rowIndex][colIndex]
 		let endpoint = ""
 		let body: RequestBody = {
 			candidateId,
